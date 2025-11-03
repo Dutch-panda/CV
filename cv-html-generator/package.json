@@ -7,10 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node scripts/ generate.js"
   },
-  "keywords": ["HTML", "Node.js", "CV_Creator"],
+  "keywords": [
+    "HTML",
+    "Node.js",
+    "CV_Creator"
+  ],
   "author": "Ehsan_Negahdar",
   "license": "ISC",
   "dependencies": {
+    "handlebars": "^4.7.8",
     "handler": "^0.1.3"
   }
 }
