@@ -1,0 +1,5 @@
+# Dependencies
+/node_modules
+
+# Build output (since GitHub Pages will serve it directly from the repo)
+/output
