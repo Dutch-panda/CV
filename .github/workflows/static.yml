@@ -33,18 +33,19 @@ jobs:
       
       # --- NEW STEPS TO RUN YOUR GENERATOR SCRIPT ---
       - name: Setup Node.js
-        # This installs Node.js so you can run npm commands
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Use a stable Node.js version
-          
+          node-version: '20'
+
       - name: Install Dependencies
-        # Installs Handlebars and other packages from package.json
         run: npm install
+        # 🚨 FIX: Tell npm where package.json is located
+        working-directory: cv-html-generator 
 
       - name: Run CV Generator Build
-        # Executes your generator script to populate the './output' folder
         run: npm run build
+        # 🚨 FIX: Tell the build script where the project root is
+        working-directory: cv-html-generator 
       # -----------------------------------------------
         
       - name: Setup Pages
@@ -53,8 +54,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # This path is correct, but the build must run first to populate it!
-          path: ./output
+          # This path is correct relative to the root, but we'll specify it to be safe
+          path: ./cv-html-generator/output
           
       - name: Deploy to GitHub Pages
         id: deployment
