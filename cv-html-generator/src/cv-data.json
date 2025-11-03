@@ -178,7 +178,7 @@
         },
         {
           "id": "n7d0djl6kxthgdjeqcunmkcm",
-          "visible": true,
+          "visible": false,
           "company": "Hamrah Academy ",
           "position": "Data Analytics Trainee ",
           "location": "Telecom Industry",
@@ -191,7 +191,7 @@
         },
         {
           "id": "y1pc8wtjwvbm9ql9ubeg3syk",
-          "visible": true,
+          "visible": false,
           "company": "Rose Academy (Consultancy and Education)",
           "position": "Data Analytics Trainee ",
           "location": "Retail Consulting",
@@ -204,7 +204,7 @@
         },
         {
           "id": "nav5kyj6em0syb1yep5g2acf",
-          "visible": true,
+          "visible": false,
           "company": "University of Tehran (Student Association)",
           "position": "Project Coordinator | Business Games League",
           "location": "Volunteer",
@@ -223,7 +223,21 @@
       "separateLinks": true,
       "visible": true,
       "id": "volunteer",
-      "items": []
+      "items": [
+        {
+          "id": "k20rk9mgk4jcftv7rvcdbwjc",
+          "visible": true,
+          "organization": "University of Tehran ",
+          "position": "Project Coordination of Business Games League",
+          "location": "",
+          "date": "Nov 2019 - May. 2020",
+          "summary": "<ul><li><p>Coordinated the planning and execution of a university-wide business strategy competition with industry partners.</p></li><li><p>Managed event logistics, team registration, budgets, and communication between participants and sponsors.</p></li><li><p>Oversaw project timelines and deliverables, fostering teamwork and analytical thinking among participants.</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
     },
     "interests": {
       "name": "Interests",
@@ -378,12 +392,12 @@
           "profiles",
           "summary",
           "experience",
+          "education",
           "projects",
           "volunteer",
           "references"
         ],
         [
-          "education",
           "skills",
           "interests",
           "certifications",
